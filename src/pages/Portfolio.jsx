@@ -1,6 +1,10 @@
 import { useState } from "react";
 import StarDark from "../components/StarDark";
 
+import firstImage from "/src/assets/port1.png";
+import secondImage from "/src/assets/port2.png";
+import thirdImage from "/src/assets/port3.png";
+
 export default function Portfolio() {
     
     const [lightBoxSrc, setLightBoxSrc] = useState(null);
@@ -21,9 +25,9 @@ export default function Portfolio() {
 
             <div className="row w-100 justify-content-center g-5 ps-5 mb-5">
                 <div className="col-md-4">
-                    <div onClick={() => openLightBox("src/assets/port1.png")}
+                    <div onClick={() => openLightBox(firstImage)}
                      className="imageBox rounded-3 overflow-hidden position-relative">
-                        <img className="w-100" src="src/assets/port1.png" alt="" />
+                        <img className="w-100" src={firstImage} alt="" />
                         <div className="overlay position-absolute bg-color-tertiary">
                             <i className="fa-solid fa-plus text-white fa-3x"></i>
                         </div>
@@ -31,45 +35,45 @@ export default function Portfolio() {
 
                 </div>
                 <div className="col-md-4">
-                    <div onClick={() => openLightBox("src/assets/port2.png")}
+                    <div onClick={() => openLightBox(secondImage)}
                      className="imageBox rounded-3 overflow-hidden position-relative">
-                        <img className="w-100" src="src/assets/port2.png" alt="" />
+                        <img className="w-100" src={secondImage} alt="" />
                         <div className="overlay position-absolute bg-color-tertiary">
                             <i className="fa-solid fa-plus text-white fa-3x"></i>
                         </div>
                     </div>
                 </div>
-                <div onClick={() => openLightBox("src/assets/port3.png")}
+                <div onClick={() => openLightBox(thirdImage)}
                  className="col-md-4">
                     <div className="imageBox rounded-3 overflow-hidden position-relative">
-                        <img className="w-100" src="src/assets/port3.png" alt="" />
+                        <img className="w-100" src={thirdImage} alt="" />
                         <div className="overlay position-absolute bg-color-tertiary">
                             <i className="fa-solid fa-plus text-white fa-3x"></i>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-4">
-                    <div onClick={() => openLightBox("src/assets/port1.png")}
+                    <div onClick={() => openLightBox(firstImage)}
                      className="imageBox rounded-3 overflow-hidden position-relative">
-                        <img className="w-100" src="src/assets/port1.png" alt="" />
+                        <img className="w-100" src={firstImage} alt="" />
                         <div className="overlay position-absolute bg-color-tertiary">
                             <i className="fa-solid fa-plus text-white fa-3x"></i>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-4">
-                    <div onClick={() => openLightBox("src/assets/port2.png")}
+                    <div onClick={() => openLightBox(secondImage)}
                      className="imageBox rounded-3 overflow-hidden position-relative">
-                        <img className="w-100" src="src/assets/port2.png" alt="" />
+                        <img className="w-100" src={secondImage} alt="" />
                         <div className="overlay position-absolute bg-color-tertiary">
                             <i className="fa-solid fa-plus text-white fa-3x"></i>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-4">
-                    <div onClick={() => openLightBox("src/assets/port3.png")}
+                    <div onClick={() => openLightBox(thirdImage)}
                      className="imageBox rounded-3 overflow-hidden position-relative">
-                        <img className="w-100" src="src/assets/port3.png" alt="" />
+                        <img className="w-100" src={thirdImage} alt="" />
                         <div className="overlay position-absolute bg-color-tertiary">
                             <i className="fa-solid fa-plus text-white fa-3x"></i>
                         </div>
